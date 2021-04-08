@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 
 export default function Todo({ text, todo, todos, setTodos }) {
 
-    const [editText, setEditText] = useState('');
+    //const [editText, setEditText] = useState('');
 
   //Event
   const deleteHandler = () => {
@@ -23,7 +23,7 @@ export default function Todo({ text, todo, todos, setTodos }) {
     );
   };
 
-  const editHandle = () => {
+ /*  const editHandle = () => {
     setTodos(
       todos.map((item) => {
         if (item.id === todo.id) {
@@ -36,13 +36,13 @@ export default function Todo({ text, todo, todos, setTodos }) {
       })
     );
 
-    setEditText(todo.text);
-  };
+    //setEditText(todo.text);
+  }; */
 
   const inputTextHandler = (e) => {
     //console.log(e.target.value);
     //setEditText(e.target.value);
-    setEditText(...todo.text, e.target.value);
+    //setEditText(...todo.text, e.target.value);
   }
 
   const submitTodoHandler = (e) =>{
